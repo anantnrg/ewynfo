@@ -158,6 +158,7 @@ name = "ewynfo"
 version = "0.1.0"
 dependencies = [
  "clap",
+ "linecount",
  "sysinfo",
 ]
 
@@ -172,6 +173,12 @@ name = "libc"
 version = "0.2.148"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9cdc71e17332e86d2e1d38c1f99edcb6288ee11b815fb1a4b049eaa2114d369b"
+
+[[package]]
+name = "linecount"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d5d5a4a243b9cf052d37af99679cc93b08a791f444a4a1b21bb4efcaf01847d8"
 
 [[package]]
 name = "memoffset"
