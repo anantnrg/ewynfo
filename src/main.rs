@@ -45,6 +45,8 @@ fn parse_args(args: Arguments, sys: System) {
 		"os" => {
 			if args.info.as_str() == "updates" {
 				get_updates();
+			} else if args.info.as_str() == "distro" {
+				get_distro(sys)
 			}
 		}
 		&_ => {
@@ -72,4 +74,8 @@ fn get_updates() {
 
 	let pkg_count = count_lines(pkg_list.stdout.unwrap()).unwrap();
 	println!("{}", pkg_count);
+}
+
+fn get_distro(mut sys: System) {
+	println!("{}", sys.distribution_id());
 }
